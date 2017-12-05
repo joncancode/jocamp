@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './B_Call.css';
-import { TweenLite, TimelineMax, TweenMax, Elastic } from 'gsap';
+import { TweenLite, TimelineLite, SteppedEase } from 'gsap';
 import ScrollMagic from './ScrollMagic';
 
 class B_Call extends Component {
@@ -8,24 +8,37 @@ class B_Call extends Component {
     var controller = new ScrollMagic.Controller();
 
     var item = '#myId';
-    var scene1 = new ScrollMagic.Scene({ triggerElement: item })
-      .setTween(item, 1.5, { backgroundColor: 'red', scale: 3, ease: Elastic.easeOut })
+    // var scene1 = new ScrollMagic.Scene({ triggerElement: item })
+    //   .setTween(item, 1.5, {
+    //     backgroundColor: 'red',
+    //     scale: 3,
+    //     borderRadius: '80%',
+    //     ease: SteppedEase.config(20)
+    //   })
+    //   .addTo(controller);
+
+    // var item2 = '#myId2';
+    // var scene2 = new ScrollMagic.Scene({ triggerElement: item2 })
+    //   .setTween(item2, 0.5, { backgroundColor: 'blue', scale: 3, delay: 0.2 })
+    //   .setTween(item2, 0.5, { backgroundColor: 'purple', scale: 2, delay: 1.5 })
+    //   .addTo(controller);
+
+
+      var tl = new TimelineLite();
+      var scene1 = new ScrollMagic.Scene({ triggerElement: item })
+      tl.add( TweenLite.to('#myId', 0.3, {scale: 3, backgroundColor: 'green'}) );
+      tl.add( TweenLite.to('#myId', 1, {backgroundColor: 'purple'}) );
+      tl.add( TweenLite.to('#myId2', 1, {backgroundColor: 'blue'}) );
+
+      var scene1 = new ScrollMagic.Scene({ triggerElement: item })
+      .setTween(tl)
       .addTo(controller);
 
-    var item2 = '#myId2';
-    var scene2 = new ScrollMagic.Scene({ triggerElement: item2 })
-      .setTween(item2, 0.5, { backgroundColor: 'blue', scale: 5, delay: 0.2 })
-      .addTo(controller);
 
-      //  var timeline = new TimelineMax();
-      //  var tween1 = TweenMax.from("#myId", 0.7, {x: 100});
-      //  var tween2 = TweenMax.to("#muId2", 0.7, {y: 100});
-      //  timeline
-      //     .add(tween1)
-      //     .add(tween2);
-      //  scene.addTween(timeline);
+      
+
   }
-
+  
   render() {
     return (
       <div className="B_Call">
