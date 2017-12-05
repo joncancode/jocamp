@@ -7,25 +7,8 @@ class B_Call extends Component {
   componentDidMount() {
     var controller = new ScrollMagic.Controller();
 
-    var item = '#myId';
-    // var scene1 = new ScrollMagic.Scene({ triggerElement: item })
-    //   .setTween(item, 1.5, {
-    //     backgroundColor: 'red',
-    //     scale: 3,
-    //     borderRadius: '80%',
-    //     ease: SteppedEase.config(20)
-    //   })
-    //   .addTo(controller);
-
-    // var item2 = '#myId2';
-    // var scene2 = new ScrollMagic.Scene({ triggerElement: item2 })
-    //   .setTween(item2, 0.5, { backgroundColor: 'blue', scale: 3, delay: 0.2 })
-    //   .setTween(item2, 0.5, { backgroundColor: 'purple', scale: 2, delay: 1.5 })
-    //   .addTo(controller);
-
-
+      var item = '#myId';
       var tl = new TimelineLite();
-      var scene1 = new ScrollMagic.Scene({ triggerElement: item })
       tl.add( TweenLite.to('#myId', 0.3, {scale: 3, backgroundColor: 'green'}) );
       tl.add( TweenLite.to('#myId', 1, {backgroundColor: 'purple'}) );
       tl.add( TweenLite.to('#myId2', 1, {backgroundColor: 'blue'}) );
