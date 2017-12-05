@@ -1,12 +1,17 @@
 import React, { Component } from 'react';
 import './B_Call.css';
 import { TweenLite } from 'gsap';
+import ScrollMagic from "./ScrollMagic";
 
 class B_Call extends Component {
 
     componentDidMount(){
 
-        TweenLite.to(window, 2.8, {scrollTo: '#myId'});
+      var controller = new ScrollMagic.Controller();
+      var item = "#myId";
+      var scene = new ScrollMagic.Scene({triggerElement:item})
+              .setTween(item, 0.5, {backgroundColor: "red", scale: 3})
+              .addTo(controller);
         
         
     }
