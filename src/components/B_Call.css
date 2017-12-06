@@ -7,3 +7,24 @@
     background-color: yellow;
     max-width: 350px;
 }
+
+.background {
+    background-repeat: no-repeat;
+    width: 90%;
+    display: block;
+    margin: auto;
+    height: 400px;
+}
+
+.para-text {
+    color: white;
+    padding: 20px 20px 0px 20px;
+    margin-left: 295px;
+    max-width: 500px;
+    line-height: 1.5;
+}
+
+.purple {
+
+
+}
