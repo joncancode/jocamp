@@ -2,3 +2,8 @@
     height: 130vh;
     background-color: lightblue;
 }
+
+#myAId {
+    background-color: yellow;
+    max-width: 350px;
+}
