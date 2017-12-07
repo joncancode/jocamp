@@ -1,19 +1,21 @@
 
 .A_Intro {
-    flex-direction: column;
     background-color: black;
     color: white;
 }
 
 .container-intro {
-    height: 80vh;
-    position:relative;
+    height: 110vh;
+    position: relative;
 }
 
-.container-intro span {
+.container-intro h2 {
     position: absolute;
     bottom: 0;
-    left: 10;
+    left: 0;
+    right: 0;
+    margin: auto;
     font-size: 60px;
     font-family: 'Spectral SC', serif;
+    padding-bottom: 150px;
 }

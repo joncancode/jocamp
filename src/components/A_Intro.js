@@ -17,7 +17,7 @@ class A_Intro extends Component {
     return (
       <div className="A_Intro">
         <div className="container-intro">
-        <span className="top-heading">The Monomyth</span>
+        <h2 className="top-heading">The Monomyth</h2>
         </div>
         <div className="trigger">trigger</div>
         </div>
