@@ -1,19 +1,19 @@
+
 .A_Intro {
-    background-color: lightsalmon;
-    height: 160vh;
+    flex-direction: column;
+    background-color: black;
+    color: white;
 }
 
-.top-head {
-    height: 90vh;
+.container-intro {
+    height: 80vh;
+    position:relative;
 }
 
-.trigger {
-    text-align: center;
-    position: relative;
-    top: 6px;
-}
-
-.bcg {
-    background-color: lightseagreen;
-    height: 80px;
+.container-intro span {
+    position: absolute;
+    bottom: 0;
+    left: 10;
+    font-size: 60px;
+    font-family: 'Spectral SC', serif;
 }

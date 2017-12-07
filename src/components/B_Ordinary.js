@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
-import './A_Ordinary.css';
+import './B_Ordinary.css';
 import { TweenLite, TimelineLite, SteppedEase } from 'gsap';
 import ScrollMagic from './ScrollMagic';
 
-class A_Ordinary extends Component {
+class B_Ordinary extends Component {
   componentDidMount() {
     var controller = new ScrollMagic.Controller();
 
       var item2 = '.containerA';
       var tl = new TimelineLite();
-      tl.add( TweenLite.to('.containerA', 0.3, {scale: 3, backgroundColor: 'green'}) );
+      tl.add( TweenLite.to('.containerA', 0.3, {scale: 1, backgroundColor: 'green'}) );
       tl.add( TweenLite.to('.containerA', 1, {backgroundColor: 'pink'}) );
       tl.add( TweenLite.to('.containerA', 1, {backgroundColor: 'blue'}) );
 
@@ -34,4 +34,4 @@ class A_Ordinary extends Component {
   }
 }
 
-export default A_Ordinary;
+export default B_Ordinary;
