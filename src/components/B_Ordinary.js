@@ -12,11 +12,11 @@ class B_Ordinary extends Component {
 
       var item = '.intro-text-end';
       var tl = new TimelineLite();
-      tl.add( TweenLite.to('*', 1.3, {backgroundColor: '#b49ce2'}));
+      tl.add( TweenLite.to('*', 1.3, {backgroundColor: '#9370DB'}));
       tl.add( TweenLite.to('.journeyHeader', 0.3, {opacity: 1, x: 30}) );
       tl.add( TweenLite.to('.journeyText', 0.3, {opacity: 1, x: 30}) );
-      tl.add( TweenLite.to('.journeyBackground', 0.1, {opacity: 0}) );
-      tl.add( TweenLite.to('.journeyBackground', 1, {opacity: 1, y: 30}) );
+      tl.add( TweenLite.to('.desert-scene', 0.1, {opacity: 0}) );
+      tl.add( TweenLite.to('.desert-scene', 1, {opacity: 1, y: 10}) );
 
       var scene1 = new ScrollMagic.Scene({ triggerElement: item })
       .setTween(tl)
@@ -31,7 +31,6 @@ class B_Ordinary extends Component {
         <div className="containerB">
         <h2 className="journeyHeader">First Header </h2>
         <p className="journeyText">First section </p>
-        <div className="journeyBackground" style={{ backgroundImage: `url(${desert})` }}>
           <p className="para-text">
             Lorem morbi nec iaculis leo, quis lobortis neque. Ut hendrerit,
             risus in dapibus euismod, nibh leo volutpat elit, vel pharetra odio
@@ -42,10 +41,10 @@ class B_Ordinary extends Component {
             sodales. In libero ante, euismod eu sollicitudin in, porttitor nec
             mi.
           </p>
-          <img className="luke_desert" src={luke_desert} width="200" height="240" />
+          <div className="desert-scene">
+          <img className="luke_desert" src={luke_desert} width="200" height="260" />
           <img className="suns" src={suns} width="500" height="500" />
-          <img className="desert" src={desert} width="500" height="500" />
-        </div>
+          </div>
         </div>
       </div>
     );
