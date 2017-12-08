@@ -1,9 +1,14 @@
 .B_Ordinary {
+    padding-top: 500px;
     height: 130vh;
-    background-color: lightblue;
+    background-color: black;
 }
 
-#myAId {
-    background-color: yellow;
-    max-width: 350px;
+.journeyHeader, .journeyText {
+    opacity: 0;
+    color: black;
+}
+
+.journeyBackground {
+    opacity: 0;
 }
