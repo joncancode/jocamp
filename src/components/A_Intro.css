@@ -1,17 +1,11 @@
-
-.A_Intro {
-    background-color: black;
+.top-heading {
+    position: relative;
+    padding: 250px 0px 650px 0px;
     color: white;
 }
 
-.container-intro {
-    height: 110vh;
-    position: relative;
-}
-
-.container-intro h2 {
+.top-heading h2 {
     position: absolute;
-    bottom: 50%;
     left: 0;
     right: 0;
     margin: auto;
@@ -24,7 +18,5 @@
     color: white;
     font-family: 'Montserrat', sans-serif;
     line-height: 1.7;
-    max-width: 40%;
-    padding: 0 0 100px 100px;
+    max-width: 60%;
   }
-

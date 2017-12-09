@@ -10,9 +10,9 @@ class B_Ordinary extends Component {
   componentDidMount() {
     var controller = new ScrollMagic.Controller();
 
-      var item = '.intro-text-end';
+      var item = '.intro-text';
       var tl = new TimelineLite();
-      tl.add( TweenLite.to('*', 1.3, {backgroundColor: '#9370DB'}));
+      tl.add( TweenLite.to('.container', 1.3, {backgroundColor: 'rgba(102,51,153, 0.8)'}));
       tl.add( TweenLite.to('.journeyHeader', 0.3, {opacity: 1, x: 30}) );
       tl.add( TweenLite.to('.journeyText', 0.3, {opacity: 1, x: 30}) );
       tl.add( TweenLite.to('.desert-scene', 0.1, {opacity: 0}) );
@@ -27,8 +27,7 @@ class B_Ordinary extends Component {
   
   render() {
     return (
-      <div className="B_Ordinary">
-        <div className="containerB">
+        <div className="container">
         <h2 className="journeyHeader">First Header </h2>
         <p className="journeyText">First section </p>
           <p className="para-text">
@@ -46,7 +45,7 @@ class B_Ordinary extends Component {
           <img className="suns" src={suns} width="500" height="500" />
           </div>
         </div>
-      </div>
+
     );
   }
 }

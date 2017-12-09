@@ -1,5 +1,12 @@
 .App {
-  text-align: center;
   background-color: black;
+  text-align: center;
 }
 
+.container {
+  display: inline-block;
+  position: relative;
+  color: white;
+  margin: auto 0;
+  width: 80%;
+}
