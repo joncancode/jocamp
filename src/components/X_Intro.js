@@ -26,6 +26,28 @@ class X_Intro extends Component {
     // })
     // .setTween(TweenMax.from('.bcg', 1, {y: '-80%', ease:Power0.easeNone}))
     // .addTo(controller)
+
+
+        // for simple tween //
+    // var item = '#myId';
+    // var scene1 = new ScrollMagic.Scene({ triggerElement: item })
+    //   .setTween(item, 1.5, {
+    //     backgroundColor: 'red',
+    //     scale: 3,
+    //     ease: Elastic.easeOut
+    //   })
+    //   .addTo(controller);
+
+    // for timeline //
+    // var item = '#myId';
+    // var tl = new TimelineLite();
+    // tl.add( TweenLite.to('#myId', 0.3, {scale: 3, backgroundColor: 'green'}) );
+    // tl.add( TweenLite.to('#myId', 1, {backgroundColor: 'purple'}) );
+    // tl.add( TweenLite.to('#myId2', 1, {backgroundColor: 'blue'}) );
+
+    // var scene1 = new ScrollMagic.Scene({ triggerElement: item })
+    // .setTween(tl)
+    // .addTo(controller);
       
 
   }
