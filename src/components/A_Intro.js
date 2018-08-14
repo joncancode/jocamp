@@ -15,28 +15,31 @@ class A_Intro extends Component {
       .setTween(tl)
       .addTo(controller);
 
-      var item2 = '.tie';
-      var tl2 = new TimelineLite();
-      tl2.add(TweenLite.to('.tie', 0.1, { opacity: 1, x: 10, }));
-      tl2.add(TweenLite.to('.tie', 2.5, { opacity: 0.0, x: 800, y: 100 }));
-  
-      var scene2 = new ScrollMagic.Scene({ triggerElement: item2 })
-        .setTween(tl2)
-        .addTo(controller)
+    var item2 = '.tie img';
+    var tl2 = new TimelineLite();
+    tl2.add(TweenLite.to('.tie', 0.5, { opacity: 1, x: 10 }));
+    tl2.add(TweenLite.to('.tie', 2.5, { opacity: 0.0, x: '90%', y: '100' }));
 
-        var item3 = '.lucas-intro';
-        var tl3 = new TimelineLite();
-        tl3.add(TweenLite.to('.lucas-intro', 2.5, { opacity: 1, x: 150 }));
-        tl3.add(TweenLite.to('.lucas-intro2', 2.5, { opacity: 1, x: -150 }));
-    
-        var scene3 = new ScrollMagic.Scene({ triggerElement: item3 })
-          .setTween(tl3)
-          .addTo(controller)
+    var scene2 = new ScrollMagic.Scene({
+      triggerElement: item2,
+      duration: '100%'
+    })
+      .setTween(tl2)
+      .addTo(controller);
+
+    var item3 = '.lucas-intro';
+    var tl3 = new TimelineLite();
+    tl3.add(TweenLite.to('.lucas-intro', 2.5, { opacity: 1, x: 150 }));
+    tl3.add(TweenLite.to('.lucas-intro2', 2.5, { opacity: 1, x: -150 }));
+
+    var scene3 = new ScrollMagic.Scene({ triggerElement: item3 })
+      .setTween(tl3)
+      .addTo(controller);
   }
 
   render() {
     return (
-      <div className="container" style={{width: "100%"}}>
+      <div className="container" >
         <div style={{ height: '120vh', backgroundColor: 'rgba(0,0,0, 1)' }}>
           <del style={{ color: 'rgba(255,255,250, 0.3)' }}>
             <p
@@ -50,11 +53,14 @@ class A_Intro extends Component {
                 maxWidth: '60%'
               }}
             >
-              <i>Star Wars</i><br/>{'&'} The Hero's Journey.
+              <i>Star Wars</i>
+              <br />
+              {'&'} The Hero's Journey.
             </p>
           </del>
         </div>
-        <div className="tie"
+        <div
+          className="tie"
           style={{
             paddingTop: '100px',
             paddingBottom: '200px',
@@ -62,26 +68,43 @@ class A_Intro extends Component {
             float: 'left',
             position: 'relative',
             opacity: '0.0'
-          }}>
+          }}
+        >
           <img alt="tie" src={tie} width="400" height="300" />
-          </div>
-          <p className="lucas-intro" style={{
+        </div>
+        <p
+          className="lucas-intro"
+          style={{
             color: 'rgba(255,255,250, 1)',
             width: '30%',
             fontSize: '32px',
             margin: '800px 100px 0 0',
             position: 'relative',
             fontFamily: 'Courier New',
-            opacity: '1'}} >George Lucas was an admirer of Joseph Campbell, who popularized the Hero's Journey. </p><br/>
-            <p className="lucas-intro2" style={{
+            opacity: '1'
+          }}
+        >
+          George Lucas was an admirer of Joseph Campbell, who popularized the
+          Hero's Journey.{' '}
+        </p>
+        <br />
+        <p
+          className="lucas-intro2"
+          style={{
             color: 'rgba(255,255,250, 1)',
             width: '30%',
             fontSize: '32px',
             marginTop: '200px',
+            paddingBottom: '300px',
             position: 'relative',
             fontFamily: 'Courier New',
             float: 'right',
-            opacity: '1'}}>The 1977 film directly reflected the steps outlined in The Hero with a Thousand Faces.</p>
+            opacity: '1'
+          }}
+        >
+          The 1977 film directly reflected the steps outlined in The Hero with a
+          Thousand Faces.
+        </p>
       </div>
     );
   }

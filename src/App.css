@@ -1,12 +1,23 @@
-.App {
+body {
   background-color: black;
-  text-align: center;
+  right: 0;
+  left: 0;
+  margin: auto;
+  width: "100vw";
 }
+
+
+.App {
+  text-align: center;
+  margin: auto;
+  width: "100vw";
+}
+
 
 .container {
   display: inline-block;
   position: relative;
   color: white;
   margin: auto 0;
-  width: 80%;
+  width: 100%;
 }

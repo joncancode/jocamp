@@ -21,9 +21,79 @@ class C_Call extends Component {
 
   render() {
     return (
-      <div className="container"  style={{width: "100%"}}>
+      <div className="container">
         <h2 className="cHeader">second Header </h2>
         <p className="cText">second section </p>
+          <p className="para-text">
+            Lorem morbi nec iaculis leo, quis lobortis neque. Ut hendrerit,
+            risus in dapibus euismod, nibh leo volutpat elit, vel pharetra odio
+            dolor sed tellus. Aliquam erat volutpat. Nulla facilisi. Donec
+            dictum nibh a magna dignissim maximus. Suspendisse massa sem,
+            blandit at ullamcorper vel, faucibus sed nunc. Etiam interdum sem
+            sit amet posuere varius. Aliquam convallis lacus ac risus suscipit
+            sodales. In libero ante, euismod eu sollicitudin in, porttitor nec
+            mi.
+          </p>
+          <p className="para-text">
+            Lorem morbi nec iaculis leo, quis lobortis neque. Ut hendrerit,
+            risus in dapibus euismod, nibh leo volutpat elit, vel pharetra odio
+            dolor sed tellus. Aliquam erat volutpat. Nulla facilisi. Donec
+            dictum nibh a magna dignissim maximus. Suspendisse massa sem,
+            blandit at ullamcorper vel, faucibus sed nunc. Etiam interdum sem
+            sit amet posuere varius. Aliquam convallis lacus ac risus suscipit
+            sodales. In libero ante, euismod eu sollicitudin in, porttitor nec
+            mi.
+          </p>
+          <p className="para-text">
+            Lorem morbi nec iaculis leo, quis lobortis neque. Ut hendrerit,
+            risus in dapibus euismod, nibh leo volutpat elit, vel pharetra odio
+            dolor sed tellus. Aliquam erat volutpat. Nulla facilisi. Donec
+            dictum nibh a magna dignissim maximus. Suspendisse massa sem,
+            blandit at ullamcorper vel, faucibus sed nunc. Etiam interdum sem
+            sit amet posuere varius. Aliquam convallis lacus ac risus suscipit
+            sodales. In libero ante, euismod eu sollicitudin in, porttitor nec
+            mi.
+          </p>
+          <p className="para-text">
+            Lorem morbi nec iaculis leo, quis lobortis neque. Ut hendrerit,
+            risus in dapibus euismod, nibh leo volutpat elit, vel pharetra odio
+            dolor sed tellus. Aliquam erat volutpat. Nulla facilisi. Donec
+            dictum nibh a magna dignissim maximus. Suspendisse massa sem,
+            blandit at ullamcorper vel, faucibus sed nunc. Etiam interdum sem
+            sit amet posuere varius. Aliquam convallis lacus ac risus suscipit
+            sodales. In libero ante, euismod eu sollicitudin in, porttitor nec
+            mi.
+          </p>
+          <p className="para-text">
+            Lorem morbi nec iaculis leo, quis lobortis neque. Ut hendrerit,
+            risus in dapibus euismod, nibh leo volutpat elit, vel pharetra odio
+            dolor sed tellus. Aliquam erat volutpat. Nulla facilisi. Donec
+            dictum nibh a magna dignissim maximus. Suspendisse massa sem,
+            blandit at ullamcorper vel, faucibus sed nunc. Etiam interdum sem
+            sit amet posuere varius. Aliquam convallis lacus ac risus suscipit
+            sodales. In libero ante, euismod eu sollicitudin in, porttitor nec
+            mi.
+          </p>
+          <p className="para-text">
+            Lorem morbi nec iaculis leo, quis lobortis neque. Ut hendrerit,
+            risus in dapibus euismod, nibh leo volutpat elit, vel pharetra odio
+            dolor sed tellus. Aliquam erat volutpat. Nulla facilisi. Donec
+            dictum nibh a magna dignissim maximus. Suspendisse massa sem,
+            blandit at ullamcorper vel, faucibus sed nunc. Etiam interdum sem
+            sit amet posuere varius. Aliquam convallis lacus ac risus suscipit
+            sodales. In libero ante, euismod eu sollicitudin in, porttitor nec
+            mi.
+          </p>
+          <p className="para-text">
+            Lorem morbi nec iaculis leo, quis lobortis neque. Ut hendrerit,
+            risus in dapibus euismod, nibh leo volutpat elit, vel pharetra odio
+            dolor sed tellus. Aliquam erat volutpat. Nulla facilisi. Donec
+            dictum nibh a magna dignissim maximus. Suspendisse massa sem,
+            blandit at ullamcorper vel, faucibus sed nunc. Etiam interdum sem
+            sit amet posuere varius. Aliquam convallis lacus ac risus suscipit
+            sodales. In libero ante, euismod eu sollicitudin in, porttitor nec
+            mi.
+          </p>
           <p className="para-text">
             Lorem morbi nec iaculis leo, quis lobortis neque. Ut hendrerit,
             risus in dapibus euismod, nibh leo volutpat elit, vel pharetra odio
