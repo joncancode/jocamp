@@ -1,38 +1,38 @@
 import React, { Component } from 'react';
 import { TweenLite, TweenMax, TimelineLite, Power0 } from 'gsap';
 import ScrollMagic from './ScrollMagic';
-import tie from '../images/A_Intro/tie.jpg';
+import tie from '../images/Intro/tie.jpg';
 
-class A_Intro extends Component {
+class Intro extends Component {
   componentDidMount() {
-    var controller = new ScrollMagic.Controller();
+    const controller = new ScrollMagic.Controller();
 
-    var item = '.intro-text';
-    var tl = new TimelineLite();
+    const item = '.intro-text';
+    const tl = new TimelineLite();
     tl.add(TweenLite.to('.intro-text', 1.5, { opacity: 1, y: 50 }));
 
-    var scene1 = new ScrollMagic.Scene({ triggerElement: item })
+    const scene1 = new ScrollMagic.Scene({ triggerElement: item })
       .setTween(tl)
       .addTo(controller);
 
-    var item2 = '.tie img';
-    var tl2 = new TimelineLite();
+    const item2 = '.tie img';
+    const tl2 = new TimelineLite();
     tl2.add(TweenLite.to('.tie', 0.5, { opacity: 1, x: 10 }));
-    tl2.add(TweenLite.to('.tie', 2.5, { opacity: 0.0, x: '90%', y: '100' }));
+    tl2.add(TweenLite.to('.tie', 2.5, { opacity: 0, x: '90%', y: '100' }));
 
-    var scene2 = new ScrollMagic.Scene({
+    const scene2 = new ScrollMagic.Scene({
       triggerElement: item2,
       duration: '100%'
     })
       .setTween(tl2)
       .addTo(controller);
 
-    var item3 = '.lucas-intro';
-    var tl3 = new TimelineLite();
+    const item3 = '.lucas-intro';
+    const tl3 = new TimelineLite();
     tl3.add(TweenLite.to('.lucas-intro', 2.5, { opacity: 1, x: 150 }));
     tl3.add(TweenLite.to('.lucas-intro2', 2.5, { opacity: 1, x: -150 }));
 
-    var scene3 = new ScrollMagic.Scene({ triggerElement: item3 })
+    const scene3 = new ScrollMagic.Scene({ triggerElement: item3 })
       .setTween(tl3)
       .addTo(controller);
   }
@@ -110,4 +110,4 @@ class A_Intro extends Component {
   }
 }
 
-export default A_Intro;
+export default Intro;
