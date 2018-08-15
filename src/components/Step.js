@@ -32,9 +32,93 @@ let steps = [
   {
     number: 'section3',
     part: 'Part III: Refusal of Call',
-    image: step1,
+    image: step3,
     description:
       "Luke says, 'Nuh-uh, I have to take care of the farm. I can’t get involved.'"
+  },
+  {
+    number: 'section4',
+    part: 'Part IV: Magical Guide',
+    image: step4,
+    description:
+      "Obi-Wan, of course. But also the droids, in a certain way."
+  },
+  {
+    number: 'section5',
+    part: 'Part V: First Threshold',
+    image: step5,
+    description:
+      "Mos Eisely spaceport, and the tough cantina, is Luke’s first step into the world beyond that boring old moisture farm."
+  },
+  {
+    number: 'section6',
+    part: 'Part VI: Belly of the Whale',
+    image: step6,
+    description:
+      "The Millennium Falcon gets stuck at the Death Star and garbage compactor."
+  },
+  {
+    number: 'section7',
+    part: 'Part VII: The Road of Trials',
+    image: step7,
+    description:
+      "The events leading up to both the rescue of Leia and the destruction of the Death Star."
+  },
+  {
+    number: 'section8',
+    part: 'Part VIII: Putting on the Enemy’s Skin',
+    image: step8,
+    description:
+      "Han & Luke in the Stormtrooper outfits."
+  },
+  {
+    number: 'section9',
+    part: 'Part IX: Meeting With the Goddess',
+    image: step9,
+    description:
+      "Leia is the goddess—she’s a help, not a hindrance, but she also is a bit of a temptress/distraction."
+  },
+  {
+    number: 'section10',
+    part: 'Part X: Atonement With the Father',
+    image: step10,
+    description:
+      "Luke puts aside the computer, destroys the Death Star, therefore becoming both a great pilot and Jedi, like his father."
+  },
+  {
+    number: 'section11',
+    part: 'Part XI: The Ultimate Boon',
+    image: step11,
+    description:
+      "Though the Empire is not completely destroyed, it’s hampered quite a bit. Luke now understands something about the ways of the Force and will use them for good (we hope!)."
+  },
+  {
+    number: 'section12',
+    part: 'Part XII: Magic Flight',
+    image: step12,
+    description:
+      "All the spaceships throughout are Magic Flight, especially the extraordinarily fast Millenium Falcon."
+  },
+  {
+    number: 'section13',
+    part: 'Part XIII: Rescue From Without',
+    image: step13,
+    description:
+      "Han, who had already left with his cash reward, returns to save Luke from being blasted at the last moment."
+  },
+  {
+    number: 'section14',
+    part: 'Part XIV: Crossing the Return Threshold',
+    image: step14,
+    description:
+      "Luke’s home is destroyed, but his new home honors and welcomes him in the medal ceremony."
+  },
+  {
+    number: 'section15',
+    part: 'Part XV: Master of Two Worlds',
+    image: step15,
+    description:
+      "Luke is not only a hotshot pilot and commander in the Rebel Alliance, he also can talk to echoing-voiced Obi-Wan and use the Force."
   },
 ];
 

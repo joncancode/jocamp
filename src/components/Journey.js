@@ -37,18 +37,44 @@ class Journey extends Component {
   componentDidMount() {
     const controller = new ScrollMagic.Controller();
 
-    const item = '.section1';
-    const tl = new TimelineLite();
-    tl.add(TweenLite.to('.step', 1.3, {}));
-    tl.add(TweenLite.to('.step', 1.5, { opacity: 1, y: 50 }));
+    const item1 = '.section1';
+    const tl1 = new TimelineLite();
+    tl1.add(TweenLite.to('.step', 1.3, {}));
+    tl1.add(TweenLite.to('.step', 1.5, { opacity: 1, y: 50 }));
 
     const pinnedIntro = new ScrollMagic.Scene({
-      triggerElement: item,
+      triggerElement: item1,
       duration: 1000
     })
-      .setTween(tl)
-      .setPin(item)
+      .setTween(tl1)
+      .setPin(item1)
       .addTo(controller);
+
+      const item2 = '.section2';
+      const tl2 = new TimelineLite();
+      tl2.add(TweenLite.to('.step', 1.3, {}));
+      tl2.add(TweenLite.to('.step', 1.5, { opacity: 1, color: 'green' }));
+  
+      const pinnedIntro2 = new ScrollMagic.Scene({
+        triggerElement: item2,
+        duration: 1000
+      })
+        .setTween(tl2)
+        .setPin(item2)
+        .addTo(controller);
+
+      const item3 = '.section3';
+      const tl3 = new TimelineLite();
+      tl3.add(TweenLite.to('.step', 1.3, {}));
+      tl3.add(TweenLite.to('.step', 1.5, { opacity: 1, backgroundColor: 'blue' }));
+  
+      const pinnedIntro3 = new ScrollMagic.Scene({
+        triggerElement: item3,
+        duration: 1000
+      })
+        .setTween(tl3)
+        .setPin(item3)
+        .addTo(controller);
   }
 
   render() {
