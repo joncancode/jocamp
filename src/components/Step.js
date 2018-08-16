@@ -1,19 +1,18 @@
 import step1 from '../images/Step/step1.png';
-import step2 from '../images/Step/step1.png';
-import step3 from '../images/Step/step1.png';
-import step4 from '../images/Step/step1.png';
-import step5 from '../images/Step/step1.png';
-import step6 from '../images/Step/step1.png';
-import step7 from '../images/Step/step1.png';
-import step8 from '../images/Step/step1.png';
-import step9 from '../images/Step/step1.png';
-import step10 from '../images/Step/step1.png';
-import step11 from '../images/Step/step1.png';
-import step12 from '../images/Step/step1.png';
-import step13 from '../images/Step/step1.png';
-import step14 from '../images/Step/step1.png';
-import step15 from '../images/Step/step1.png';
-import step16 from '../images/Step/step1.png';
+import step2 from '../images/Step/step2.png';
+import step3 from '../images/Step/step3.png';
+import step4 from '../images/Step/step4.png';
+import step5 from '../images/Step/step5.png';
+import step6 from '../images/Step/step6.png';
+import step7 from '../images/Step/step7.png';
+import step8 from '../images/Step/step8.png';
+import step9 from '../images/Step/step9.png';
+import step10 from '../images/Step/step10.png';
+import step11 from '../images/Step/step11.png';
+import step12 from '../images/Step/step12.png';
+import step13 from '../images/Step/step13.png';
+import step14 from '../images/Step/step14.png';
+import step15 from '../images/Step/step15.png';
 
 let steps = [
   {
@@ -38,7 +37,7 @@ let steps = [
   },
   {
     number: 'section4',
-    part: 'Part IV: Magical Guide',
+    part: 'Part IV: Meeting the Mentor',
     image: step4,
     description:
       "Obi-Wan, of course. But also the droids, in a certain way."

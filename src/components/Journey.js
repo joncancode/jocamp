@@ -11,12 +11,11 @@ class Journey extends Component {
           <span
             className="step"
             style={{
-              fontSize: '32px',
+              fontSize: '26px',
               position: 'relative',
               fontFamily: 'Courier New',
               right: '5%',
               opacity: '0',
-              width: '10%'
             }}
           >
             {steps[i].part}
@@ -26,7 +25,7 @@ class Journey extends Component {
         </div>
         <p
           className="para-text"
-          style={{ width: '100%', marginBottom: '300px' }}
+          style={{ width: '50%', paddingBottom: '200px', margin: 'auto' }}
         >
           {steps[i].description}
         </p>
@@ -42,7 +41,7 @@ class Journey extends Component {
     tl1.add(TweenLite.to('.step', 1.3, {}));
     tl1.add(TweenLite.to('.step', 1.5, { opacity: 1, y: 50 }));
 
-    const pinnedIntro = new ScrollMagic.Scene({
+    new ScrollMagic.Scene({
       triggerElement: item1,
       duration: 1000
     })
@@ -55,7 +54,7 @@ class Journey extends Component {
       tl2.add(TweenLite.to('.step', 1.3, {}));
       tl2.add(TweenLite.to('.step', 1.5, { opacity: 1, color: 'green' }));
   
-      const pinnedIntro2 = new ScrollMagic.Scene({
+      new ScrollMagic.Scene({
         triggerElement: item2,
         duration: 1000
       })
@@ -68,13 +67,54 @@ class Journey extends Component {
       tl3.add(TweenLite.to('.step', 1.3, {}));
       tl3.add(TweenLite.to('.step', 1.5, { opacity: 1, backgroundColor: 'blue' }));
   
-      const pinnedIntro3 = new ScrollMagic.Scene({
+      new ScrollMagic.Scene({
         triggerElement: item3,
         duration: 1000
       })
         .setTween(tl3)
         .setPin(item3)
         .addTo(controller);
+
+
+
+          // const item4 = '.section4';
+          // const tl4 = new TimelineLite();
+          // tl4.add(TweenLite.to('.step', 1.3, {}));
+          // tl4.add(TweenLite.to('.step', 1.5, { opacity: 1, backgroundColor: 'pink' }));
+      
+          // new ScrollMagic.Scene({
+          //   triggerElement: item4,
+          //   duration: 1000
+          // })
+          //   .setTween(tl4)
+          //   .setPin(item4)
+          //   .addTo(controller);
+
+          //   const item5 = '.section5';
+          //   const tl5 = new TimelineLite();
+          //   tl5.add(TweenLite.to('.step', 1.3, {}));
+          //   tl5.add(TweenLite.to('.step', 1.5, { opacity: 1, backgroundColor: 'yellow' }));
+        
+          //   new ScrollMagic.Scene({
+          //     triggerElement: item5,
+          //     duration: 1000
+          //   })
+          //     .setTween(tl5)
+          //     .setPin(item5)
+          //     .addTo(controller);
+
+          //     const item6 = '.section6';
+          //     const tl6 = new TimelineLite();
+          //     tl6.add(TweenLite.to('.step', 1.3, {}));
+          //     tl6.add(TweenLite.to('.step', 1.5, { opacity: 1, backgroundColor: 'gray' }));
+          
+          //     new ScrollMagic.Scene({
+          //       triggerElement: item6,
+          //       duration: 1000
+          //     })
+          //       .setTween(tl6)
+          //       .setPin(item6)
+          //       .addTo(controller);
   }
 
   render() {
