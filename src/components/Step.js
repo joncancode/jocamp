@@ -17,6 +17,7 @@ import step15 from '../images/Step/step15.png';
 let steps = [
   {
     number: 'section1',
+    step: 'step1',
     part: 'Part I: The Ordinary World',
     image: step1,
     description:
@@ -24,12 +25,14 @@ let steps = [
   },
   {
     number: 'section2',
+    step: 'step2',
     part: 'Part II: Call to Action',
     image: step2,
     description: "Obi-wan says 'Come with me to Alderaan'"
   },
   {
     number: 'section3',
+    step: 'step3',
     part: 'Part III: Refusal of Call',
     image: step3,
     description:
@@ -37,6 +40,7 @@ let steps = [
   },
   {
     number: 'section4',
+    step: 'step4',
     part: 'Part IV: Meeting the Mentor',
     image: step4,
     description:
@@ -44,6 +48,7 @@ let steps = [
   },
   {
     number: 'section5',
+    step: 'step5',
     part: 'Part V: First Threshold',
     image: step5,
     description:
@@ -51,6 +56,7 @@ let steps = [
   },
   {
     number: 'section6',
+    step: 'step6',
     part: 'Part VI: Belly of the Whale',
     image: step6,
     description:
@@ -58,6 +64,7 @@ let steps = [
   },
   {
     number: 'section7',
+    step: 'step7',
     part: 'Part VII: The Road of Trials',
     image: step7,
     description:
@@ -65,6 +72,7 @@ let steps = [
   },
   {
     number: 'section8',
+    step: 'step8',
     part: 'Part VIII: Putting on the Enemy’s Skin',
     image: step8,
     description:
@@ -72,6 +80,7 @@ let steps = [
   },
   {
     number: 'section9',
+    step: 'step9',
     part: 'Part IX: Meeting With the Goddess',
     image: step9,
     description:
@@ -79,6 +88,7 @@ let steps = [
   },
   {
     number: 'section10',
+    step: 'step10',
     part: 'Part X: Atonement With the Father',
     image: step10,
     description:
@@ -86,6 +96,7 @@ let steps = [
   },
   {
     number: 'section11',
+    step: 'step11',
     part: 'Part XI: The Ultimate Boon',
     image: step11,
     description:
@@ -93,6 +104,7 @@ let steps = [
   },
   {
     number: 'section12',
+    step: 'step12',
     part: 'Part XII: Magic Flight',
     image: step12,
     description:
@@ -100,6 +112,7 @@ let steps = [
   },
   {
     number: 'section13',
+    step: 'step13',
     part: 'Part XIII: Rescue From Without',
     image: step13,
     description:
@@ -107,6 +120,7 @@ let steps = [
   },
   {
     number: 'section14',
+    step: 'step14',
     part: 'Part XIV: Crossing the Return Threshold',
     image: step14,
     description:
@@ -114,6 +128,7 @@ let steps = [
   },
   {
     number: 'section15',
+    step: 'step15',
     part: 'Part XV: Master of Two Worlds',
     image: step15,
     description:
